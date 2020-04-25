@@ -1,0 +1,147 @@
+body{
+    background-image: url(sudoku-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    box-sizing: border-box;
+    height:1000px;
+}
+.cell{
+    /* box-sizing: border-box; */
+    width: 40px;
+    height:40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+tr:first-child td{
+    border-top-color: black ;
+    border-top-width: 5px;
+    box-sizing: border-box;
+}
+tr:nth-child(3n) td {
+    border-bottom-color: black ;
+    border-bottom-width: 5px;
+    box-sizing: border-box;
+
+}
+td:first-child {
+    border-left-color: black ;
+    border-left-width: 5px;
+    box-sizing: border-box;
+
+}
+td:nth-child(3n){
+    border-right-color: black ;
+    border-right-width: 5px;
+    box-sizing: border-box;
+
+}
+.col-2{
+    position: flex;
+    top: -189px;
+    right: -440px; 
+    background:transparent;
+    border-radius: 4px;
+    border-color: black;
+    color: rgb(17, 56, 51);
+     margin: -4px;
+    height: 40px; 
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+#validata{
+    background: rgb(29, 21, 66);
+    margin:0px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+#oneMore{
+    background: rgb(29, 21, 66);
+    margin:0px;
+    color:white;
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+#backword{
+    background: rgb(29, 21, 66);
+    margin:0px;
+    /* position: relative; */
+    color:white;
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-sizing: border-box;
+}
+#head-of-page{
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 75px;
+    font-family: sofia;
+    position: relative;
+   right:320px;
+    
+  
+   
+    
+}
+#sdk_div{
+    box-sizing: border-box;
+    position: relative;
+    top: 18px;
+    left: 500px;
+}
+ td , tr{ 
+     width: 40px;
+     box-sizing: border-box;
+    height:40px; 
+    font-size: larger;
+    text-align: center;
+    /* box-sizing: border-box; */
+    border: 2px groove  rgb(0, 0, 0); 
+}
+input{
+    border: transparent;
+    box-sizing: border-box;
+}
+
+ /* leftop devices (portrait leftop ) */
+ @media only screen and (width: 1024px) {
+    #sdk_div.container{
+       float: left;
+    }
+    /* #head-of-page{
+      left:2cm;
+    } */
+ } 
+
+ /* Small devices (portrait tablets ) */
+ @media only screen and (width: 768px) {
+    #sdk_div.container{
+       float: left;
+    }
+    #head-of-page{
+        left:100px;
+    }
+  
+ } 
+
+ @media only screen and (max-width: 600px) {
+    #sdk_div.container{
+       float: left;
+    }
+    #head-of-page{
+        left:150px;
+    }
+
+    /* #validata{
+       
+     }
+    #oneMore{
+      
+    }
+    #backword{
+       
+   }  */
+ } 

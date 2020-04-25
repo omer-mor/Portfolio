@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="diffstyle.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <title>Sudoku</title>
+  <link rel="shourcut icon" type="image/png"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFopf2JC98DozTYN5gM0q1Nar4teBBW-0c55V5L1vk0d0mcOYiPq2mI96Kw&s" />
+</head>
+
+<body>
+  <div id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="welcomediv">
+          <P id="welcome"> Welcome <span id="usertitle">ABCD</span></P>
+             </div>
+        </div> <!--close row-->
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-4" id="definition">
+          <p id="nameOfPage">Level difficulty</p>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div><!--close row-->
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-2"></div>
+      <!-- buttons that calls some function in order to determen the difficulty of the game -->
+      <div class="col-1" class="button"><button class="level" id="push1" onclick="playEasy()">easy</button> </div>
+      <div class="col-1" class="button"><button class="level" id="push2" onclick="playMedium()">medium</button> </div>
+      <div class="col-1" class="button"><button class="level" id="push3" onclick="playHard()">hard</button> </div>
+       <div class="col-5"></div> 
+   </div> 
+   <div class="row">
+          <div class="col-2"></div> 
+          <div class="col-2"></div>
+          <!-- <div class="col-2"></div> -->
+          <!-- <div class="col-1"></div>  -->
+      <!-- <div> <button id="rules">Rules</button></div>  -->
+         <div class="col-3"> <div><button  type="button" class="btn btn-info btn-lg" id="rulesbutton" data-toggle="modal"
+       data-target="#myModal">Rules</button> </div>
+       <div class="col-1"></div>  
+       <div class="col-4"></div>
+     </div>
+    
+
+    <!-- Modal that open the rules of the game  -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            <h4 class="modal-title">Rules</h4>
+          </div>
+          <div class="modal-body">
+            <p>The classic Sudoku game involves a grid of 81 squares. The grid is divided into nine blocks, each
+              containing nine squares.
+
+              The rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 within its
+              squares. Each number can only appear once in a row, column or box.
+
+              The difficulty lies in that each vertical nine-square column, or horizontal nine-square line across,
+              within the larger square, must also contain the numbers 1-9, without repetition or omission.
+
+              Every puzzle has just one correct solution.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--close of the "container-->
+
+
+
+  </div>
+  <script src="diffscript.js"></script>
+</body>
+
+</html>
