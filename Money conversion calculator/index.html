@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> calculator</title>
+    <link id="icon"  rel="shourcut icon" type="image/png" href="https://www.flaticon.com/premium-icon/icons/svg/1992/1992235.svg">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body >
+    <div id="frame">
+        <div class="row" >
+            <div class="col-2"></div>
+            <div class="col-3"><p id="mishpat1">type of coin</p></div>
+            <div class="col-2"></div>
+            <div class="col-4"><p id="mishpat2">Amount of shekels</p></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-4"> <input type="text" id="coin"></div>
+            <div class="col-1" ></div>
+            <div class="col-4"> <input type="text" id="shekels"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5"><button onclick="conversion()" id="sub">submit</button></div>
+            <div class="col-5" id="mikom">
+                <p id="mishpat1">type of coin:</p>
+                <p class="mishpat2">*euro 4.2</p>
+                <p class="mishpat2">*dolar 3.9</p>
+                <p class="mishpat2">*Pound Sterling 5.0</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
